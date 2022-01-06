@@ -39,7 +39,8 @@ button.addEventListener("click", () => {
                 el.addEventListener("click", () => {
                     p.innerHTML = el.getAttribute("data-title")
                     heading.innerHTML = el.getAttribute("data-value")
-                    //add class active on clicked icon 
+                    divList.forEach(el => el.classList.remove("active"))
+                    el.classList.add("active")
                     
                 })
             })
